@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/principal.css">
+    <title>Modelo Completar Frases</title>
+</head>
+<body>
+    <main>
+        <p class="enunciado">01) Se a força resultante sobre um corpo é 
+            <select id="q1">
+                <option value="0"></option>
+                <option value="1">velocidade</option>
+                <option value="2">aceleração</option>
+                <option value="3">nula</option>
+                <option value="4">não nula</option>
+            </select>, então a 
+            <select id="q2">
+                <option value="0"></option>
+                <option value="1">velocidade</option>
+                <option value="2">aceleração</option>
+                <option value="3">nula</option>
+                <option value="4">não nula</option>
+            </select> do corpo é
+            <select id="q3">
+                <option value="0"></option>
+                <option value="1">velocidade</option>
+                <option value="2">aceleração</option>
+                <option value="3">nula</option>
+                <option value="4">não nula</option>
+            </select>.
+        </p>
+        <div>
+            <div id="mensagens">
+                <p class="correcao" id="correto" style="color: green">Correto!</p>
+                <p class="correcao" id="errado" style="color: red">Errado...</p>
+            </div>
+            <div id="containerBotoes">
+                <input class="apagarBtn" type="button" id="refazer" value="Refazer">
+                <input class="apagarBtn" type="button" id="tente-novamente" value="Tente novamente">
+                <input class="confirmarBtn" type="button" id="confirmar" value="Confirmar">
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/validar.js"></script>
+</body>
+</html>

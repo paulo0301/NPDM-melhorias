@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/principal.css" type="text/css">
+    <title>radio</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="radio" name="ex01" id="a">
+            <label for="a">a) Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam mollitia molestiae sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa aperiam eius architecto obcaecati sunt deleniti velit officiis unde hic praesentium molestiae illum neque, dolorem eum reprehenderit voluptates soluta placeat excepturi.
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="ex01" id="b">
+            <label for="b">b) Lorem ipsum dolor sit amet consectetur adipisicing.
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="ex01" id="c">
+            <label for="c">c) Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, veritatis.
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="ex01" id="d">
+            <label for="d">d) x = z + y</label>
+        </div>
+        <div class="correcao">
+            <input type="button" class="confirmarBtn" id="confirmar" onclick="verificar('b')" value="Confirmar">
+            <span id="avaliacao"></span>
+        </div>
+    </form>
+</body>
+<script src="js/verificar.js"></script>
+</html>

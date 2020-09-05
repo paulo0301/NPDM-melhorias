@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, sans-serif;
+    width: 600px;
+    margin: 0 auto;
+}
+p{
+    margin: 5px 0 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+}
+select{
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid rgb(118, 118, 118);
+    outline: none;
+    background-color: transparent;
+}
+select:disabled{
+    color: black;
+    opacity: 0.9;
+}
+input{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 2px;
+    border-radius: 4px;
+    z-index: 0;
+    margin-left: 10px;
+}
+input:hover{
+    cursor: pointer;
+    filter: opacity(0.8);
+}
+
+input#confirmar{
+    background-color: #006599;
+}
+input#refazer{
+    background-color: #00cc99;
+    display: none;
+}
+input#tente-novamente{
+    background-color: #669999;
+    width: 120px;
+    margin-left: 0;
+    display: none;
+}
+
+p.correcao{
+    margin: 0;
+    display: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#mensagens{
+    min-width: 100px;
+}
+main>div{
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
