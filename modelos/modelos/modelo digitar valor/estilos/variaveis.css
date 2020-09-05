@@ -5,11 +5,11 @@
 
 
 :root{
-    --dy: 60px;
+    --dy: 70px;
 
     /* tamanho da caixa de texto*/
     --altura1: 25px;  --largura1: 40px;    
-    
+
     /* caixa de texto 01 */
     --top1: 1px;                               --left1:1px;
 
@@ -26,7 +26,7 @@
     --top5:calc(var(--top4) + var(--dy));  		--left5:calc(var(--left1));
     
     /* Botões e mensagem */
-    --top6:305px; --left6:40px;
+    --top6:345px; --left6:22px;
     
     /* Distancia do marcador */
     --margin1: 3px;
