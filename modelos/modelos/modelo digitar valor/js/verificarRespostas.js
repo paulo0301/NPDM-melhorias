@@ -1,5 +1,5 @@
 /* GABARITO ----------------------------------*/
-var R = [3, -12, 3, 8, 15];
+var R = [1, 2, 3, 4, 5];
 /* -------------------------------------------*/
 
 //Variável com o tamanho do gabarito
@@ -32,6 +32,7 @@ function verificarRespostas(){
         if(resposta.value != ""){
             if(R[i-1] == resposta.value){
                 img.setAttribute("src", "imagens/correct-symbol.png");
+                // elemento.style.display = "inline-block";
                 resposta.disabled = true;
                 acertos++;
             }

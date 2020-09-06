@@ -20,7 +20,7 @@ form div{
     position: absolute;
     display: flex;
     align-items: center;
-    width: 265px;
+    width: 280px;
     border-bottom: 1.5px solid #747474;
     padding-bottom: 8px;
     justify-content: space-between;
@@ -65,7 +65,8 @@ label{
 span.marcador{
     margin-left: var(--margin1);
     margin-bottom: 7px;
-    display: none;
+    width: 18px;
+    /* display: none; */
 }
 /* BOTÃO CONFIRMAR */
 .confirmarBtn {
