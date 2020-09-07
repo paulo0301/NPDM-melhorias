@@ -1,3 +1,4 @@
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     <link rel="stylesheet" href="arquivos/estilos/auxiliar.css">		
     <link rel="stylesheet" href="arquivos/estilos/estiloResponsivo.css">	
     <link rel="stylesheet" href="arquivos/estilos/mainF.css">
-    <title>Videoaula</title>
+    <title>modelo</title>
 </head>
 <body onresize="resizeTela()">
     <div class="btnFonte" hidden>
@@ -15,15 +16,21 @@
     </div>
     
     <header>
-        <h1><a href="http://napalmadamao.ifrn.edu.br/mathlibras.html"><img src="arquivos/imagens/fisica.png" height="90px" alt="logo do site"/><br>Física Invertida<br><span>Aulas de Física Básica</span></a></h1>		
-        <nav><ol></ol></nav>
+        <h1>
+            <a href="http://napalmadamao.ifrn.edu.br/mathlibras.html">
+                <img src="arquivos/imagens/fisica.png" height="90px" alt="logo do site"/>
+                Física Invertida
+                <span>Aulas de Física Básica</span>
+            </a>
+        </h1>		
+        <!-- <nav><ol></ol></nav> -->
     </header>
     
     <div class="aulas">			
         <a href="#"><b>Aula 01</b></a> <b>|</b>
         <a href="aula02.html"  target="_blank">Aula 02</a> <b>|</b>	
         <a href="aula03.html"  target="_blank">Aula 03</a> <b>|</b>
-        <a href="aula04.html"  target="_blank">Aula 04</a> <b>|</b>		
+        <a href="aula04.html"  target="_blank">Aula 04</a> <b></b>
     </div>
     
     <main class="corpo-aula px720">
@@ -31,13 +38,105 @@
         
         <!-- INÍCIO DA AULA /////////////////////////////////////////////////////////////////////////// -->	
         
-        <!-- 01  -->		
+        <!-- 01  -->
         <section class="padding20">
-            <h3 class="titulo topico-aula">1. Densidade</h3>			
-            <div class="centralizar">
-                <iframe src="https://www.youtube.com/embed/1umQiu60xAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="titulo topico-aula">1. Introdução</h3>
+            
+            <p >Precisamos de espaço para nos locomover, precisamos de espaço para guardar coisas em um armário, ocupamos uma parte do espaço que está disponível no universo e precisamos nos localizar no espaço.</p> 
+            
+            <p class="padding10"> Contudo, para determinar a posição de um corpo, precisamos de algum sistema de medida de posição. Como exemplo, veja a imagem abaixo. Como está, não temos condições de especificar a posição do boneco.</p>	
+            
+            <div class="centralizar espaco10" hidden>
+                <audio src="audios/audio01.mp4" preload="auto" controls></audio>				
             </div>
+            <div class="centralizar espaco10">				
+                <img class="imagem sombra" src="aula01/imagens/card1.png" width=""/>
+            </div>			
         </section>
+        
+        <!--   -->		
+        <section class="padding20">
+            <hr/>
+            <p class="padding20">Vamos determinar a posição dessa pessoa usando um eixo numérico horizontal, chamado de "eixo x" e graduado em metros (m). Observe que, relação a esse eixo, o boneco está na posição "6 m".</p> 
+            
+            <div class="centralizar">
+                <img class="imagem sombra" src="aula01/imagens/card2.png" width=""/>
+            </div>			
+        </section>
+        
+        <!--   -->		
+        <section class="padding20">
+            <hr/>
+            <p class="">Nesse exemplo, a pessoa na cor azul está na origem do eixo x, que é a posição 0 m.<br>A pessoa na cor laranja está na posição 4 m, no lado positivo do eixo x.<br>A pessoa na cor verde está na posição -5 m, no lado negativo do eixo x.</p> 
+            
+            <p class="padding20"></p> 
+            
+            <div class="centralizar">
+                <img class="imagem sombra" src="aula01/imagens/card3.png" width=""/>
+            </div>			
+        </section>
+        
+        <!-- 02  -->		
+        <section class="padding20">
+            <h3 class="titulo topico-aula">2. Posição em duas dimensões</h3>
+            
+            <p>Para determinar a posição em um plano, que envolve <b>duas dimensões</b>, precisamos de dois eixos numéricos, perpendiculares entre si, que vamos chamar de <b>eixo x</b> e <b>eixo y</b>, conforme ilustrado na figura abaixo.</p>			
+            
+            <div class="centralizar espaco20">				
+                <img class="imagem" src="aula01/imagens/card4.png" width=""/>
+            </div>			
+        </section>
+        
+        <!-- 02.1  -->		
+        <section class="padding20">
+            <hr/>
+            <p> Observe o ponto azul marcado na tela.<br> Sobre o <b>eixo x</b> ele está na posição <b>10 m</b>, e sobre o <b>eixo y</b> ele está na posição <b>4 m</b>. Sua posição, em relação a esses dois eixos, é escrita como sendo <b>(10,5)</b>.<br>Como regra, escrevemos primeiro a medida de posição em "x" e depois a medida de posição em "y".</p>	
+            <p> </p>	
+            
+            <div class="centralizar espaco20">				
+                <img class="imagem" src="aula01/imagens/card5.png" width=""/>
+            </div>			
+        </section>
+        
+        <!-- 02.2  -->		
+        <section class="padding20">
+            <hr/>
+            <p> Um sistema de leitura de posição, formado por dois eixos numéricos perpendiculares, é chamado de <b>sistema de coordenadas cartesianas</b>. O esquema abaixo mostra esse sistema, com valores positivos e negativos em ambos os eixos, e a unidade de medida de posição utilizada.</p>	
+            
+            <div class="centralizar espaco20">				
+                <img class="imagem" src="aula01/imagens/card6.png" width=""/>
+            </div>			
+        </section>
+        
+        <!-- 02.3  -->		
+        <section class="padding20">
+            <hr/>
+            <p> Vejamos alguns exemplos de leitura para alguns pontos em um sistema de coordenadas cartesianas.</p>	
+            
+            <div class="centralizar espaco20">				
+                <img class="imagem" src="aula01/imagens/card7.png" width=""/>
+            </div>			
+        </section>
+        
+        <!-- 03  -->		
+        <section class="padding20">
+            <h3 class="titulo topico-aula">3. Posição: uma grandeza relativa.</h3>
+            
+            <p>A leitura da posição de um corpo que depende do eixo numérico utilizado para sua determinação.</p>
+            <p> Por exemplo, em relação ao eixo <b>x1</b>, a pessoa representada na figura está na posição <b>x = 5 m</b>.</p>	
+            
+            <div class="centralizar espaco20">				
+                <img class="imagem sombra" src="aula01/imagens/card8a.png" width=""/>
+            </div>	
+            
+            <br><hr/>
+            
+            <p> Porém, se mudarmos o eixo de coordenadas de referência, a <b>leitura de posição</b> muda. Veja que no eixo <b>x2</b> a mesma pessoa agora está na posição <b>x = 2 m</b>.</p>	
+            
+            <div class="centralizar espaco20">				
+                <img class="imagem sombra" src="aula01/imagens/card8b.png" width=""/>
+            </div>		
+        </section>	
         
         
         <!-- 02  -->	
@@ -60,8 +159,9 @@
             <a href="#"><span class="seta seta-top"></span></a>
             <a href="http://www.fisicainvertida.com/termodinamica_aulas/aula_02/termodinamica_aula_02.html"><span class="seta seta-prox"></span></a>
         </nav>
+        
         <!-- Fim navegação fim da aula -->
-        <hr>
+        <hr/>
         <div class="aulas">			
             <b>|</b><a href="#"> <b>Início</b></a> <b>|</b>					
         </div>	
@@ -69,19 +169,23 @@
         <!-- FIM DA AULA ****************************************************** -->			
         
     </main>
-    
     <footer>     
-        <figure><img src="arquivos/imagens/contato.PNG" alt="Informações de contato"/></figure>
+        <address>
+            <ul>
+                <li><a href="https://goo.gl/maps/JxR5XJWitknyGFD3A" target="_blank"><img src="arquivos/imagens/pointer.png" alt="localização">IFRN | Natal - Central</a></li>
+                <li><img src="arquivos/imagens/telefone.png" alt="telefone">(84) 9 8797 - 2102</li>
+                <li><img src="arquivos/imagens/email.png" alt="arroba">geraldo.felipe@ifrn.edu.br</li>
+            </ul>
+        </address>
         <picture>
-            <source media="(max-width: 1075px)" srcset="arquivos/imagens/logo03.png"/>
-            <img src="arquivos/imagens/logo02.png" alt="Logotipo"/>
-        </picture>
-        <div class="creditos">
-            <p>Prof.Geraldo Felipe | IFRN/CNAT
-                <br/>Junho de 2020</p>
+            <source media="(max-width: 300px)" srcset="arquivos/imagens/logo.png">
+                <source media="(max-width: 1075px)" srcset="arquivos/imagens/logo03.png"/>
+                <img src="arquivos/imagens/logo02.png" alt="Logotipo"/>
+            </picture>
+            <div class="creditos">
+                <p>Prof.Geraldo Felipe | IFRN/CNAT<br/>Junho de 2020</p>
             </div>
         </footer>
-        
     </body>
     <script>
         function resizeTela(){
