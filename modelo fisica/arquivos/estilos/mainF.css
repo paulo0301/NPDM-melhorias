@@ -92,33 +92,17 @@ nav a:hover{
     color: #2c5d7e;
 }
 */
-.aulas{
+.lista-aulas{
     text-align: center;    
     margin: 1em auto;
 }
-
-.aulas a{
+.lista-aulas a{
     padding: 0.25em 0.5em;
     text-decoration: none;
     color: #34495e;
     margin-bottom: 10em;
 }
-.aulas a:hover{
-    background-color: #b3cfe5;
-}
-
-.aulasfooter{
-    text-align: center;
-    margin: 3em 0;
-}
-
-.aulasfooter a{
-    padding: 0.25em 0.5em;
-    text-decoration: none;
-    color: #34495e;
-}
-
-.aulasfooter a:hover{
+.lista-aulas a:hover{
     background-color: #b3cfe5;
 }
 
