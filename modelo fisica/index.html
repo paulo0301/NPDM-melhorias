@@ -10,19 +10,14 @@
     <title>modelo</title>
 </head>
 <body onresize="resizeTela()">
-    <div class="btnFonte" hidden>
-        <button onclick="Mudarfonte(1)">Aumentar fonte [1]</button>
-        <button onclick="Mudarfonte(2)">Diminuir fonte [2]</button>
-    </div>
-    
     <header>
         <h1>
-            <a href="http://napalmadamao.ifrn.edu.br/mathlibras.html">
+            <a href="http://napalmadamao.ifrn.edu.br/fisicainvertida.html">
                 <img src="arquivos/imagens/fisica.png" height="90px" alt="logo do site"/>
                 Física Invertida
                 <span>Aulas de Física Básica</span>
             </a>
-        </h1>		
+        </h1>
         <!-- <nav><ol></ol></nav> -->
     </header>
     
@@ -30,7 +25,7 @@
         <a href="#"><b>Aula 01</b></a> <b>|</b>
         <a href="aula02.html"  target="_blank">Aula 02</a> <b>|</b>	
         <a href="aula03.html"  target="_blank">Aula 03</a> <b>|</b>
-        <a href="aula04.html"  target="_blank">Aula 04</a> <b></b>
+        <a href="aula04.html"  target="_blank">Aula 04</a>
     </div>
     
     <main class="corpo-aula px720">
@@ -163,7 +158,7 @@
         <!-- FIM DA AULA ****************************************************** -->			
         
     </main>
-    <footer>     
+    <footer>
         <address>
             <ul>
                 <li><a href="https://goo.gl/maps/JxR5XJWitknyGFD3A" target="_blank"><img src="arquivos/imagens/pointer.png" alt="localização">IFRN | Natal - Central</a></li>
@@ -171,35 +166,37 @@
                 <li><img src="arquivos/imagens/email.png" alt="arroba">geraldo.felipe@ifrn.edu.br</li>
             </ul>
         </address>
-        <picture>
-            <source media="(max-width: 300px)" srcset="arquivos/imagens/logo.png">
+        <a href="http://napalmadamao.ifrn.edu.br">
+            <picture>
+                <source media="(max-width: 300px)" srcset="arquivos/imagens/logo.png"/>
                 <source media="(max-width: 1075px)" srcset="arquivos/imagens/logo03.png"/>
                 <img src="arquivos/imagens/logo02.png" alt="Logotipo"/>
             </picture>
-            <div class="creditos">
-                <p>Prof.Geraldo Felipe | IFRN/CNAT<br/>Junho de 2020</p>
-            </div>
-        </footer>
-    </body>
-    <script>
-        function resizeTela(){
-            if(window.innerHeight > window.innerWidth){
-                var aV = document.querySelectorAll('#animationVisible');
-                var imag = document.querySelectorAll('#rotationImagem');
-                for(i = 0; i < aV.length; i++){
-                    aV[i].style.display = 'none';
-                    imag[i].style.display = 'block';
-                }
-            }
-            else if(document.querySelectorAll('#rotationImagem')[0].style.display != 'none'){
-                var aV = document.querySelectorAll('#animationVisible');
-                var imag = document.querySelectorAll('#rotationImagem');
-                for(i = 0; i < aV.length; i++){
-                    aV[i].style.display = 'block';
-                    imag[i].style.display = 'none';
-                }
+        </a>
+        <div class="creditos">
+            <p>Prof.Geraldo Felipe | IFRN/CNAT<br/>Junho de 2020</p>
+        </div>
+    </footer>
+</body>
+<script>
+    function resizeTela(){
+        if(window.innerHeight > window.innerWidth){
+            var aV = document.querySelectorAll('#animationVisible');
+            var imag = document.querySelectorAll('#rotationImagem');
+            for(i = 0; i < aV.length; i++){
+                aV[i].style.display = 'none';
+                imag[i].style.display = 'block';
             }
         }
-        resizeTela();
-    </script>
-    </html>
+        else if(document.querySelectorAll('#rotationImagem')[0].style.display != 'none'){
+            var aV = document.querySelectorAll('#animationVisible');
+            var imag = document.querySelectorAll('#rotationImagem');
+            for(i = 0; i < aV.length; i++){
+                aV[i].style.display = 'block';
+                imag[i].style.display = 'none';
+            }
+        }
+    }
+    resizeTela();
+</script>
+</html>

@@ -166,35 +166,38 @@ a {
     cursor: pointer;
 }
 
-.nav-fim-aula {
-    margin-top: 40px;
-    text-align: right;
+.nav-fim-aula{
+    text-align: center;
+    margin: 1em 0 0 0;
 }
-
-.seta {
+.nav-fim-aula a{
+    margin: 0;
+    padding: 0;
+}
+.seta{
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     opacity: 0.7;
+    margin: 0;
     display: inline-block;
-    height: 50px;
-    width: 50px;
-    background: url(seta.svg) center no-repeat;
-    background-size: 50px 50px;
+    height: 30px;
+    width: 25px;
+    background: url(../imagens/seta.svg) center no-repeat;
+    background-size: 25px 25px;
 }
 .seta:hover {
     opacity: 1;
 }
-
 .seta-anterior {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
 .seta-top {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+    margin: 0 4em;
 }
 /* - FIM - */
 
@@ -421,7 +424,6 @@ p {
     font-size: 17px;
     line-height: 1.6;
     text-align: justify;
-    color: #2c3e50;
 }
 @media (max-width: 480px) {
     p {
@@ -710,5 +712,35 @@ p {
     object.check05{
         width: 300px;
         height: 400px;
+    }
+}
+/* Iframe - youtube */
+
+iframe{
+    width: 560px;
+    height: 315px;
+}
+@media (max-width: 570px){
+    iframe{
+        width: 400px;
+        height: 315px;
+    }
+}
+@media (max-width: 420px){
+    iframe{
+        width: 320px;
+        height: 170px;
+    }
+}
+@media (max-width: 335px){
+    iframe{
+        width: 280px;
+        height: 170px;
+    }
+}
+@media (max-width: 285px){
+    iframe{
+        width: 240px;
+        height: 170px;
     }
 }

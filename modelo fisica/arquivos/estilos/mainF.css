@@ -60,38 +60,6 @@ header h1 span{
     display: block;
     font-weight: normal;
 }
-
-/*XXXXXXXXXX MENU XXXXXXXXXXXXXXXXXXXXXXXX
-header nav ol{
-    margin-top: 1em;
-    clear: both;
-    padding: 1em;
-    background-color: #5986AC;
-    text-align: left;
-}
-
-header nav li{
-    display: inline;
-}
-
-header nav li:first-child{
-    margin-left: 7.1em;
-}
-
-nav a{
-    text-decoration: none;
-    padding: 0.44em 0.6em;
-    font-size: 1.15em;
-    color: white;
-    font-family: 'Karla', sans-serif;
-    font-weight: bold;
-}
-
-nav a:hover{
-    background-color: #b3cfe5;
-    color: #2c5d7e;
-}
-*/
 .lista-aulas{
     text-align: center;    
     margin: 1em auto;
@@ -163,40 +131,12 @@ address{
     address{
         margin-bottom: 1em;
     }
+    footer li{
+        font-size: 16px;
+    }
 }
 @media (max-width:318px){
     footer p{
         font-size: 15px;
-    }
-}
-
-/* Iframe - youtube */
-
-iframe{
-    width: 560px;
-    height: 315px;
-}
-@media (max-width: 570px){
-    iframe{
-        width: 400px;
-        height: 315px;
-    }
-}
-@media (max-width: 420px){
-    iframe{
-        width: 320px;
-        height: 170px;
-    }
-}
-@media (max-width: 335px){
-    iframe{
-        width: 280px;
-        height: 170px;
-    }
-}
-@media (max-width: 285px){
-    iframe{
-        width: 240px;
-        height: 170px;
     }
 }

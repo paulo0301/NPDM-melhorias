@@ -714,3 +714,33 @@ p {
         height: 400px;
     }
 }
+/* Iframe - youtube */
+
+iframe{
+    width: 560px;
+    height: 315px;
+}
+@media (max-width: 570px){
+    iframe{
+        width: 400px;
+        height: 315px;
+    }
+}
+@media (max-width: 420px){
+    iframe{
+        width: 320px;
+        height: 170px;
+    }
+}
+@media (max-width: 335px){
+    iframe{
+        width: 280px;
+        height: 170px;
+    }
+}
+@media (max-width: 285px){
+    iframe{
+        width: 240px;
+        height: 170px;
+    }
+}
