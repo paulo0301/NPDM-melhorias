@@ -217,13 +217,13 @@ textarea{
   border: 2px solid rgb(41, 41, 61);
   font-size: 17px;
   border-radius: 5px;
+  resize: vertical;
 }
 
 @media (max-width: 600px) {
 	.textarea{
 	  width: 300px;
-	  height: 320px;
-	  resize: none;  
+	  height: 320px; 
 	}
 }
 
