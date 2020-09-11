@@ -3,11 +3,25 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
 a{text-decoration: none;}
 /*XXXXXXXXXX CABEÇALHO XXXXXXXXXXX*/
+.alterarFonte{
+    display: block;
+    width: 100%;
+    background-color: #184355;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    padding: 0.3em 0;
+    text-align: right;
+}
+.alterarFonte02{
+    background-color: rgba(88, 88, 88, 0.6);
+}
+
 header{
     width: 100%;
-    padding: 0.5em;
+    padding: 0 0 0.5em 0;
     background-color: #086D99;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -72,7 +86,7 @@ main{
 
 main .aulas{
     text-align: center;
-    padding: 2em 2em 8em
+    padding: 2em 0 8em;
 }
 main .linkAulas{
     width: 100%;
@@ -83,21 +97,21 @@ main .linkAulas{
 }
 
 main .linkAulas ol{
-    margin: 0 4em;
+    margin: 0 3em;
+    width: 25%;
 }
 
 main .linkAulas li{
     padding: 1em;
     border-left: 2px solid #ffffff;
     color: white;
-    width: 250px;
+    width: 100%;
     text-align: left;
     list-style-type: none;
     font-weight: 500;
 }
 main .linkAulas li:hover{
-    background-color: #ffffff;
-    color: #738ADC;
+    background-color:#ffffff;
 }
 main h2{
     font-size: 1.8rem;
@@ -107,6 +121,8 @@ main h2{
     letter-spacing: 1px;
     margin: 1em 0 3em;
 }
+/*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
+
 /*XXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXX*/
 
 footer{
@@ -130,6 +146,7 @@ address ul li, address ul li a{
     display: flex;
     align-items: center;
 }
+
 address ul li{
     margin: 0.5em 0;
     font-weight: 300;
@@ -140,4 +157,13 @@ address ul li img{
 footer ul.outros-projetos li{
     display: inline;
     margin: 0 0.5em;
+    border-radius: 50%;
 }
+
+footer ul.outros-projetos img{
+    border-radius: 50%;
+    display: inline-block;
+    height: 67px;
+}
+
+/*XXXXXXXXXXXXX FIM FOOTER XXXXXXXXXXXXXX*/
