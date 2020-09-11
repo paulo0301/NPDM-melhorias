@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+/*XXXXXXXXXX CABEÇALHO XXXXXXXXXXX*/
+header{
+    width: 100vw;
+    padding: 0.5em;
+    background-color: #086D99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+header h1 a{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+header h1 a img{
+    float: left;
+}
+
+header ol{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+header li{
+    display: inline;
+    margin: 1em;
+}
+
+header li a{
+    color: #ffffff;
+}
+
+header li a:hover{
+
+    text-decoration: #FACA22 underline ;
+}
+
+/*XXXXXXXXXX FIM CABEÇALHO XXXXXXXXXXX*/
+
+/*XXXXXXXXXX IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
+.imgInclusao img{
+    width: 100vw;
+}
+/*XXXXXXXXXX FIM IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
+
+/*XXXXXXXXXXXXX MAIN XXXXXXXXXXXXXX*/
+
+main{
+    width: 100vw;
+}
+
+main .aulas{
+    text-align: center;
+    padding: 2em;
+}
+
+main .linkAulas{
+    width: 100vwmi;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+main .linkAulas ol{
+    margin: 0 2em;
+}
+
+main .linkAulas li{
+    padding: 1em;
+    border-left: 1px solid #ffffff;
+    color: white;
+    list-style-type: none;
+}
+
+main .linkAulas li:hover{
+    background-color: #ffffff;
+    color: #738ADC
+}
