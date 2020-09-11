@@ -76,6 +76,7 @@ header li a:hover{
 }
 .sandwich{
     display: none;
+    cursor: pointer;
 }
 @media screen and (max-width: 785px){
     header{
@@ -93,6 +94,9 @@ header li a:hover{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    header ol.nav-links a:hover{
+        background-color: #184355;
     }
     .nav-links{
         display: none;
