@@ -15,7 +15,6 @@ a{text-decoration: none;}
 .alterarFonte02{
     background-color: rgba(88, 88, 88, 0.6);
 }
-
 header{
     width: 100%;
     padding: 0 0 0.5em 0;
@@ -32,12 +31,20 @@ header{
 .header02{
     background-color: rgba(69, 69, 69, 0.6);
 }
+header input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+}
 header h1{
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
-
 header h1 a{
     color: #ffffff;
     display: flex;
@@ -66,15 +73,106 @@ header li a, footer li a{
 
 header li a:hover{
     border-bottom: 2px solid #FACA22;
-    /* text-decoration: #FACA22 underline; */
 }
-
+.sandwich{
+    display: none;
+}
+@media screen and (max-width: 785px){
+    header{
+        padding-bottom: 0em;
+    }
+    header h1{
+        margin-bottom: 0.5rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    .sandwich{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2em;
+        margin-bottom: 0.5em;
+    }
+    .line{
+        height: 4px;
+        width: 30px;
+        border-radius: 5px;
+        margin: 0.1em;
+        background-color: #fff;
+        transition: 0.4s;
+    }
+}
+@media screen and (max-width: 512px){
+    .alterarFonte{
+        padding: 0;
+    }
+    .alterarFonte ol{
+        margin: 0;
+        text-align: right;
+        margin-right: 5px;
+    }
+    .alterarFonte ol li{
+        margin: 0 2px;
+    }
+    .alterarFonte input{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 420px){
+    .alterarFonte ol{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 382px){
+    .alterarFonte ol{
+        text-align: right;
+    }
+    .alterarFonte input{
+        font-size: 0.6rem;
+    }
+    .sandwich{
+        margin-right: 0.5em;
+    }
+}
+@media screen and (max-width: 350px){
+    header h1 a img{
+        width: 50px;
+    }
+    header h1{
+        font-size: 1.5em;
+    }
+}
+.open{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.change .line1{
+    -webkit-transform: rotate(-45deg) translate(-10px, 0px);
+    transform: rotate(45deg) translate(-11px, px);
+}
+.change .line2{
+    opacity: 0;
+}
+.change .line3{
+    -webkit-transform: rotate(45deg) translate(-10px, 0px);
+    transform: rotate(45deg) translate(-10px, 0px);
+}
+header ol.open li{
+    border-top: 1px solid #fff;
+    margin: 0;
+    padding: 1em 0;
+}
 /*XXXXXXXXXX FIM CABEÇALHO XXXXXXXXXXX*/
 
 /*XXXXXXXXXX IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
 .imgInclusao img{
     width: 100%;
-    margin-top: 4.5em;
+    margin-top: 6.4em;
 }
 /*XXXXXXXXXX FIM IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
 
@@ -121,6 +219,17 @@ main h2{
     letter-spacing: 1px;
     margin: 1em 0 3em;
 }
+
+@media screen and (max-width: 785px){
+    main .linkAulas{
+        flex-direction: column;
+    }
+    main .linkAulas ol{
+        width: 70%;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+}
 /*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
 
 /*XXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXX*/
@@ -165,5 +274,23 @@ footer ul.outros-projetos img{
     display: inline-block;
     height: 67px;
 }
-
+@media screen and (max-width:540px){
+    footer ul{
+        text-align: end;
+    }
+}
+@media screen and (max-width: 470px){
+    footer{
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+    footer ul.outros-projetos{
+        margin: 3em 0 0 0;
+    }
+}
+@media screen and (max-width: 380px){
+    footer ul.outros-projetos img{
+        height: 50px;
+    }
+}
 /*XXXXXXXXXXXXX FIM FOOTER XXXXXXXXXXXXXX*/

@@ -10,13 +10,19 @@
     <header>
         <div class="alterarFonte">
             <ol>
-                <li><a id="increase-font">AUMENTAR FONTE [1]</a></li>
-                <li><a id="default-font">TAMANHO ORIGINAL</a></li>
-                <li><a id="decrease-font">DIMINUIR FONTE [2]</a></li>
+                <li><input id="increase-font" type="button" value="AUMENTAR FONTE [1]"></li>
+                <li><input id="default-font" type="button" value="TAMANHO ORIGINAL"></li>
+                <li><input id="decrease-font" type="button" value="DIMINUIR FONTE [2]"></li>
             </ol>
         </div>
+        
         <h1><a href="index.html"><img src="imagens/logo.png"/>MATH LIBRAS</a></h1>
-        <ol>
+        <div class="sandwich">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <ol class="nav-links">
             <li><a href="#">AULAS</a></li>
             <li><a href="#">VÍDEO-AULAS</a></li>
             <li><a href="#">EXECÍCIOS</a></li>
@@ -132,5 +138,14 @@
             }  
         });
     } 
+    
+    //Menu sandwich
+    var sandwich = document.querySelector("div.sandwich");
+    var navLinks = document.querySelector("ol.nav-links");
+
+    sandwich.addEventListener("click", () => {
+        sandwich.classList.toggle("change");
+        navLinks.classList.toggle("open");
+    })
 </script>
 </html>
