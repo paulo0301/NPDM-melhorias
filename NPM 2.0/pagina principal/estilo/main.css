@@ -79,7 +79,7 @@ header li a:hover{
     display: none;
     cursor: pointer;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 920px){
     header{
         padding-bottom: 0em;
     }
@@ -133,6 +133,9 @@ header li a:hover{
     .alterarFonte input{
         font-size: 0.8rem;
     }
+    header h1{
+        font-size: 1.5em;
+    }
 }
 @media screen and (max-width: 420px){
     .alterarFonte ol{
@@ -140,9 +143,6 @@ header li a:hover{
     }
     header h1 a img{
         width: 50px;
-    }
-    header h1{
-        font-size: 1.5em;
     }
 }
 @media screen and (max-width: 390px){
@@ -155,13 +155,13 @@ header li a:hover{
     .sandwich{
         margin-right: 0.5em;
     }
+    header h1{
+        font-size: 1.2em;
+    }
 }
 @media screen and (max-width: 350px){
     header h1 a img{
         width: 50px;
-    }
-    header h1{
-        font-size: 1.5em;
     }
     .alterarFonte input{
         font-size: 0.64rem;
