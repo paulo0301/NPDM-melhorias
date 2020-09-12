@@ -78,7 +78,7 @@ header li a:hover{
     display: none;
     cursor: pointer;
 }
-@media screen and (max-width: 785px){
+@media screen and (max-width: 800px){
     header{
         padding-bottom: 0em;
     }
@@ -256,10 +256,11 @@ main h2{
 
 @media screen and (max-width: 785px){
     main .linkAulas{
+        width: 80%;
         flex-direction: column;
     }
     main .linkAulas ol{
-        width: 70%;
+        width: 100%;
         margin-left: 2em;
         margin-right: 0;
     }
