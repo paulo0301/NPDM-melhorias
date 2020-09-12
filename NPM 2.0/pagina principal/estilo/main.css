@@ -149,7 +149,7 @@ header li a:hover{
         text-align: right;
     }
     .alterarFonte input{
-        font-size: 0.6rem;
+        font-size: 0.72rem;
     }
     .sandwich{
         margin-right: 0.5em;
@@ -161,6 +161,9 @@ header li a:hover{
     }
     header h1{
         font-size: 1.5em;
+    }
+    .alterarFonte input{
+        font-size: 0.64rem;
     }
 }
 .open{
