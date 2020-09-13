@@ -120,7 +120,7 @@ header li a:hover{
 }
 @media screen and (max-width: 512px){
     .alterarFonte{
-        padding: 0;
+        padding: 0 0 2px 0;
     }
     .alterarFonte ol{
         margin: 0;
