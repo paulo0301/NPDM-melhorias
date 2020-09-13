@@ -253,10 +253,6 @@ p{
     font-weight: 400;
     line-height: 1.5em;
 }
-.topico-aula img{
-    margin-bottom: 1rem;
-    max-width: calc(100% - 30px);
-}
 b{
     color: #2c3e50;
 }
@@ -267,6 +263,10 @@ hr{
     margin-bottom: 1em;
     padding: 0
 }
+.topico-aula img{
+    margin-bottom: 1rem;
+    max-width: calc(100% - 30px);
+}
 .sombra{
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
@@ -275,9 +275,36 @@ hr{
 }
 
 /*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
-
+/*XXXXXXXXXXXXX CONTAINER BOTOES FINAL DA AULA XXXXXXXXXXXXXX*/
+.container-exercicios{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.container-exercicios ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1rem;
+}
+.container-exercicios ol li{
+    margin: 10px 0;
+}
+.container-exercicios ol li a{
+    background-color: #22a6b3;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 355px){
+    .container-exercicios ol li a{
+        padding: 5px 10px;
+    }
+    .container-exercicios ol{
+        margin-left: 0.5rem;
+    }
+}
 /*XXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXX*/
-
 footer{
     background-color: #313334;
     width: 100%;
@@ -318,12 +345,7 @@ footer ul.outros-projetos img{
     display: inline-block;
     height: 67px;
 }
-@media screen and (max-width:540px){
-    footer ul{
-        text-align: end;
-    }
-}
-@media screen and (max-width: 470px){
+@media screen and (max-width: 565px){
     footer{
         flex-direction: column;
         padding: 2em 1em;
