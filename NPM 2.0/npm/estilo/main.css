@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
 a{text-decoration: none;}
-body{background-color: #EFF1F6;}
 /*XXXXXXXXXX CABEÇALHO XXXXXXXXXXX*/
 .alterarFonte{
     display: block;
@@ -15,6 +13,9 @@ body{background-color: #EFF1F6;}
     text-align: right;
     font-size: 1rem;
 }
+.alterarFonte02{
+    background-color: rgba(88, 88, 88, 0.6);
+}
 header{
     width: 100%;
     padding: 0 0 0.5em 0;
@@ -23,7 +24,13 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     transition: 0.5s;
+}
+.header02{
+    background-color: rgba(69, 69, 69, 0.6);
 }
 header input{
     background-color: transparent;
@@ -188,7 +195,7 @@ header ol.open li{
 /*XXXXXXXXXX FIM CABEÇALHO XXXXXXXXXXX*/
 
 /*XXXXXXXXXX IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
-/* .imgInclusao img{
+.imgInclusao img{
     width: 100%;
     margin-top: 6.4em;
     font-size: 1rem;
@@ -202,109 +209,68 @@ header ol.open li{
     .imgInclusao img{
         margin-top: 4.5em;
     }
-} */
+}
 /*XXXXXXXXXX FIM IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
 
 /*XXXXXXXXXXXXX MAIN XXXXXXXXXXXXXX*/
 
 main{
-    width: 720px;
-    min-height: 20em;
-    margin: 1em auto;
-    padding: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    background: #fff;
-    box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.2);
-}
-@media screen and (max-width: 720px){
-    main{
-        width: 100%;
-        margin: 0;
-    }
+    width: 100%;
 }
 
-.titulo-aula{
-    text-transform: uppercase;
-    color: #2c3e50;
-    font-weight: 700;
-    font-size: 1.1em;
-}
-.subtitulo-aula{
-    text-transform: uppercase;
-    color: #2c3e50;
-    font-weight: 700;
-    font-size: 0.9em;
-}
-.topico-aula{
-    margin: 1em 0;
-}
-.titulo-topico{
-    color: white;
-    background: #8395a7;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 1em;
-    margin: 0.8em 0;
-}
-p{
-    text-align: justify;
-    font-size: 1.05em;
-    margin-bottom: 1em;
-    font-weight: 400;
-    line-height: 1.5em;
-}
-b{
-    color: #2c3e50;
-}
-hr{
-    height: 1px;
-    background: #b2b2b2;
-    border: none;
-    margin-bottom: 1em;
-    padding: 0
-}
-.topico-aula img{
-    margin-bottom: 1rem;
-    max-width: calc(100% - 30px);
-}
-.sombra{
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
-}
-.centralizar{
+main .aulas{
     text-align: center;
+    padding: 2em 0 8em;
+}
+main .linkAulas{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
-/*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
-/*XXXXXXXXXXXXX CONTAINER BOTOES FINAL DA AULA XXXXXXXXXXXXXX*/
-.container-exercicios{
-    display: flex;
-    align-items: end;
-    justify-content: center;
+main .linkAulas ol{
+    margin: 0 3em;
+    width: 25%;
 }
-.container-exercicios ol{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 1rem;
+
+main .linkAulas li{
+    padding: 1em;
+    border-left: 2px solid #ffffff;
+    color: white;
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    font-weight: 500;
 }
-.container-exercicios ol li{
-    margin: 10px 0;
+main .linkAulas li:hover{
+    background-color:#ffffff;
 }
-.container-exercicios ol li a{
-    background-color: #22a6b3;
+main h2{
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: #fff;
-    padding: 5px 25px;
-    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 1em 0 3em;
 }
-@media screen and (max-width: 355px){
-    .container-exercicios ol li a{
-        padding: 5px 10px;
+
+@media screen and (max-width: 785px){
+    main .linkAulas{
+        width: 80%;
+        flex-direction: column;
     }
-    .container-exercicios ol{
-        margin-left: 0.5rem;
+    main .linkAulas ol{
+        width: 100%;
+        margin-left: 2em;
+        margin-right: 0;
     }
 }
+/*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
+
 /*XXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXX*/
+
 footer{
     background-color: #313334;
     width: 100%;
@@ -345,7 +311,12 @@ footer ul.outros-projetos img{
     display: inline-block;
     height: 67px;
 }
-@media screen and (max-width: 565px){
+@media screen and (max-width:540px){
+    footer ul{
+        text-align: end;
+    }
+}
+@media screen and (max-width: 470px){
     footer{
         flex-direction: column;
         padding: 2em 1em;
