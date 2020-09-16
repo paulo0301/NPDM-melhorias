@@ -102,3 +102,9 @@ hr{
         margin-left: 0.5rem;
     }
 }
+
+/*XXXXXXXXXXXXXXXXX IFRAME XXXXXXXXXXXXXXXX*/
+
+iframe{
+    max-width: 100%;
+}
