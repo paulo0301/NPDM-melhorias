@@ -54,6 +54,8 @@ header h1 a{
 
 header h1 a img{
     float: left;
+    width: 60px;
+    margin: 0 8px;
 }
 
 header ol{
@@ -142,7 +144,8 @@ header li a:hover{
         text-align: center;
     }
     header h1 a img{
-        width: 50px;
+        width: 45px;
+        margin: 0 4px;
     }
 }
 @media screen and (max-width: 390px){
@@ -160,9 +163,6 @@ header li a:hover{
     }
 }
 @media screen and (max-width: 350px){
-    header h1 a img{
-        width: 50px;
-    }
     .alterarFonte input{
         font-size: 0.64rem;
     }
