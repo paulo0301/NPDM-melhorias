@@ -299,6 +299,7 @@ address ul li{
 }
 address ul li img{
     margin-right: 0.3em;
+    width: 24px;
 }
 footer ul.outros-projetos li{
     display: inline;
