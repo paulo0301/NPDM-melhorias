@@ -24,20 +24,20 @@ function ocultarMensagens(){
 //Verifica se a resposta está correta e insere a correcao
 function verificarRespostas(){
     for(let i = 1; i <= nQuestoes; i++){
-        var elemento = document.querySelector("span#rs0"+i);   
+        var elemento = document.querySelector("figure#rs0"+i);   
         var resposta = document.getElementById("0"+i);
         elemento.innerHTML = "";
         var img = document.createElement("img");
         elemento.appendChild(img);
         if(resposta.value != ""){
             if(R[i-1] == resposta.value){
-                img.setAttribute("src", "imagens/correct-symbol.png");
+                img.setAttribute("src", "imagens/correct.svg");
                 // elemento.style.display = "inline-block";
                 resposta.disabled = true;
                 acertos++;
             }
             else{
-                img.setAttribute("src", "imagens/cancel-mark.png");
+                img.setAttribute("src", "imagens/close.svg");
                 erros++;
             }
         }

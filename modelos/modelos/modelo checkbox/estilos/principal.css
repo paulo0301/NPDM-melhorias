@@ -2,7 +2,9 @@
 
 body{
 	background-color: transparent;
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
 }
 form{
 	font-family: 'Open Sans', sans-serif;
@@ -99,20 +101,7 @@ span{
 }
 
 @media (max-width: 450px){
-	body{
-		width: 370px;
-	}
 	span{
 		font-size:1em;
-	}
-}
-@media (max-width: 379px){
-	body{
-		width: 340px;
-	}
-}
-@media (max-width: 300px){
-	body{
-		width: 290px;
 	}
 }

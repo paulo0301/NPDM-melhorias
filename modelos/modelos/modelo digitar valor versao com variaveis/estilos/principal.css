@@ -1,59 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-}
 body{
     background-repeat: no-repeat;
-    position: absolute;
 }
-
 /* CAIXAS DE TEXTO */
 input[type="text"]{
+    height: var(--altura1);
+    width: var(--largura1);
     text-align: center;
     background-color: transparent;
-    padding: 2px;
+	border: 1.5px solid #2980b9;
+    outline-color: #2980b9;
+    padding: 3px;
     font-weight: bold;
-    font-size: 15px;
-    border: 1px solid rgb(85, 64, 81);
+    font-size: 16px;
+    margin-right: 2px;
+    margin-left: 10px;
 }
-input[type="text"]:disabled{
-    background-color: rgb(235,235,228);
-}
-input[type="text"].base{
-    height: var(--altura1);
-    width: var(--largura1);
-}
-input[type="text"].expoente{
-    height: var(--altura2);
-    width: var(--largura2);
-}
-fieldset{
-    width: 32em;
-    height: 12em;
-    border-radius: 8px;
-}
-legend{
+form div{
     position: absolute;
-    font-size: 1.2em;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 265px;
+    border-bottom: 1.5px solid #747474;
+    padding-bottom: 8px;
+    justify-content: space-between;
 }
-form fieldset div{
-    position: relative;
-    height: var(--altura1);
-    width: var(--largura1);
-}
-fieldset div:nth-child(1){
+div:nth-child(1){
     top: var(--top1);
     left: var(--left1);
 }
-fieldset div:nth-child(2){
+div:nth-child(2){
     top: var(--top2);
     left: var(--left2);
 }
-fieldset div:nth-child(3){
+div:nth-child(3){
     top: var(--top3);
     left: var(--left3);
+}
+div:nth-child(4){
+    top: var(--top4);
+    left: var(--left4);
+}
+div:nth-child(5){
+    top: var(--top5);
+    left: var(--left5);
 }
 /* DIV DOS BOTÕES E DA MENSAGEM */
 div#containerBotoes{
@@ -64,33 +54,23 @@ div#containerBotoes{
     flex-wrap: wrap;
     top: var(--top6);
     left: var(--left6);
+    border-bottom: none;
 }
 label{
     font-size: 1.1em;
     font-family: 'Open Sans';
+    text-align: justify;
+    width: 194px;
 }
-.marcador{
-    position: relative;
+p{
+    font-size: 1.1em;
+    font-family: 'Open Sans';
+    text-align: justify;
 }
-div:nth-child(1) span{
-    top: var(--topM1);
-    left: var(--leftM1);
-}
-div:nth-child(2) span{
-    top: var(--topM2);
-    left: var(--leftM2);
-}
-div:nth-child(3) span{
-    top: var(--topM3);
-    left: var(--leftM3);
-}
-
-figure{
-    position: relative;
-    top: var(--top4);
-    left: var(--left4);
-    height: 5px;
-    width: 5px;
+span.marcador{
+    margin-left: var(--margin1);
+    margin-bottom: 7px;
+    display: none;
 }
 /* BOTÃO CONFIRMAR */
 .confirmarBtn {
@@ -100,14 +80,13 @@ figure{
 	display: inline-block;
 	background-color: rgba(56, 103, 214,1.0);
 	color: white;
-	padding: 5px 0px;
+	padding: 5px 20px 5px 20px;
 	text-decoration: none;
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	border: 2px;
-    border-radius: 4px;
-    width: 9em;
+	border-radius: 4px;
     z-index: 0;
 }
 .confirmarBtn:hover {
@@ -123,13 +102,12 @@ figure{
 	display: none;
 	background-color: #8395a7;
 	color: white;
-	padding: 5px 0px;
+	padding: 5px 20px 5px 20px;
 	text-decoration: none;
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
-    border: 2px;
-    width: 9em;
+	border: 2px;
 	border-radius: 4px;
 	z-index: 0;
 }
@@ -137,4 +115,16 @@ figure{
 .apagarBtn:hover {
 	cursor: pointer;
 	background: rgba(131, 149, 167,0.8);
+}
+
+/* MENSAGEM */
+.mensagem{
+    margin-top: 8px;
+    font-weight: bold;
+    display: none;
+    width: 200px;
+    text-align: center;
+}
+p span{
+    color: red;
 }
