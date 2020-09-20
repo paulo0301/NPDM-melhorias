@@ -22,12 +22,14 @@
             <div class="line line2"></div>
             <div class="line line3"></div>
         </div>
-        <ol class="nav-links">
-            <li><a href="#">AULAS</a></li>
-            <li><a href="#">VIDEOAULAS</a></li>
-            <li><a href="#">EXECÍCIOS</a></li>
-            <li><a href="#">SIMULAÇÕES</a></li>
-        </ol>
+        <nav>
+            <ol>
+                <li><a href="index.html" target="_blank">AULAS</a></li>
+                <li><a href="#">VIDEOAULAS</a></li>
+                <li><a href="#">EXECÍCIOS</a></li>
+                <li><a href="#">SIMULAÇÕES</a></li>
+            </ol>
+        </nav>
     </header>
     
     <figure class="imgInclusao">
@@ -98,8 +100,10 @@
     addEventListener("scroll", function(){
         var header = document.querySelector("header");
         var changeFont = document.querySelector(".alterarFonte");
+        var nav = document.querySelector("nav");
         header.classList.toggle("header02", window.scrollY > 0);
         changeFont.classList.toggle("alterarFonte02", window.scrollY > 0);
+        nav.classList.toggle("nav02", window.scrollY > 0);
     })
     
     //Alterar tamanho da fonte
@@ -138,7 +142,7 @@
     
     //Menu sandwich
     var sandwich = document.querySelector("div.sandwich");
-    var navLinks = document.querySelector("ol.nav-links");
+    var navLinks = document.querySelector("nav");
     
     sandwich.addEventListener("click", () => {
         sandwich.classList.toggle("change");

@@ -58,7 +58,7 @@ header h1 a img{
     margin: 0 8px;
 }
 
-header ol{
+header nav ol{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     list-style-type: none;
@@ -84,6 +84,7 @@ header li a:hover{
 @media screen and (max-width: 920px){
     header{
         padding-bottom: 0em;
+        z-index: 1;
     }
     header h1{
         margin-bottom: 0.5rem;
@@ -91,18 +92,43 @@ header li a:hover{
     header li a:hover{
         border-bottom: none;
     }
-    header ol.nav-links a{
+    header nav{
         width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        position: absolute;
+        top: 100%;
+        background-color: #086D99;
+        left: -100%;
+        transition: 0.5s ease-in-out;
     }
-    header ol.nav-links a:hover{
+    .nav02{
+        background-color:  rgba(69, 69, 69, 0.6);
+    }
+    .nav02 a:hover{
+        background-color: rgba(88, 88, 88, 0.6);
+    }
+    header nav ol{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    header nav ol li{
+        display: block;
+        margin: 0;
+        height: 3rem;
+    }
+    header nav ol li a{
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border-top: 1px solid #fff;
+    }
+    header nav ol li a:hover{
         background-color: #184355;
     }
-    .nav-links{
-        display: none;
+    .open{
+        left: 0;
     }
     .sandwich{
         display: flex;
@@ -147,6 +173,9 @@ header li a:hover{
         width: 45px;
         margin: 0 4px;
     }
+    .sandwich{
+        margin-right: 0.3rem;
+    }
 }
 @media screen and (max-width: 390px){
     .alterarFonte ol{
@@ -166,14 +195,6 @@ header li a:hover{
     .alterarFonte input{
         font-size: 0.64rem;
     }
-}
-.open{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    cursor: pointer;
 }
 .change .line1{
     -webkit-transform: rotate(-45deg) translate(-10px, 0px);
