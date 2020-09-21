@@ -1,6 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 600px;
+	flex-direction: column;
+}
+form div{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+form div div{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;	
+}
+label{
+	width: 100%;
+}
+label, span{
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #2c3e50;
+}
+input[type='text']{
+	width: 45px;
+	height: 35px;
+	font-weight: 700;
+	font-size: 1em;
+	color: #2c3e50;
+	margin: 0 3px 0 10px;
+	border: 1.5px solid #2980b9;
+	border-radius: 2px;
+	padding: 0 2px;
+	outline-color: #2980b9;
+	text-align: center;
+}
+figure{
+	display: inline-block;
+	height: 18px;
+	max-width: 18px;
+	width: 100%;
+	margin-left: 7px;
+}
 /* BOTÃO CONFIRMAR */
 .confirmarBtn {
 	-webkit-transition: all 100ms ease-in-out;
@@ -44,4 +95,22 @@
 .apagarBtn:hover {
 	cursor: pointer;
 	background: rgba(131, 149, 167,0.8);
+}
+/* MENSAGENS */
+div#containerBotoes{
+	text-align: center;
+}
+p.mensagem{
+	margin-top: 5px;
+	font-weight: 700;
+	font-size: 1.2em;
+	text-align: center;
+	display: none;
+}
+/* CORES */
+.verde{
+	color: rgb(40, 138, 16);
+}
+.vermelho{
+	color: rgb(211, 12, 12);
 }

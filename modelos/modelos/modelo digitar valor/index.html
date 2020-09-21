@@ -11,36 +11,51 @@
 <body>
     <form action="" autocomplete="off">
         <div>
-            <label for="01">a) O oposto de -3 é =</label>
-            <input type="text" name="ex" id="01">
+            <div>
+                <label for="01">a) O oposto de -3 é =</label>
+                <input type="text" name="ex" id="01">
+                <span>m/s</span>
+            </div>
             <figure class="marcador" id="rs01">
-                <img src="imagens/correct.svg" alt="">
+                <!-- <img src="imagens/correct.svg" alt=""> -->
             </figure>
         </div>
         <div>
-            <label for="02">b) O simétrico de 12 é =</label>
-            <input type="text" name="ex" id="02">
+            <div>
+                <label for="02">b) O simétrico de 12 é =</label>
+                <input type="text" name="ex" id="02">
+                <span>m/s</span>
+            </div>
             <figure class="marcador" id="rs02">
                 <img src="imagens/correct.svg" alt="">
             </figure>
         </div>
         <div>
-            <label for="03">c) O módulo de 3 é =</label>
-            <input type="text" name="ex" id="03">
+            <div>
+                <label for="03">c) O módulo de 3 é =</label>
+                <input type="text" name="ex" id="03">
+                <span>m/s</span>
+            </div>
             <figure class="marcador" id="rs03">
                 <img src="imagens/close.svg" alt="">
             </figure>
         </div>
         <div>
-            <label for="04">d) O módulo de -8 é =</label>
-            <input type="text" name="ex" id="04">
+            <div>
+                <label for="04">d) O módulo de -8 é =</label>
+                <input type="text" name="ex" id="04">
+                <span>m/s</span>
+            </div>
             <figure class="marcador" id="rs04">
                 <img src="imagens/correct.svg" alt="">
             </figure>
         </div>
         <div>
-            <label for="05">e) O módulo de -15 é =</label>
-            <input type="text" name="ex" id="05">
+            <div>
+                <label for="05">e) O módulo de -15 é =</label>
+                <input type="text" name="ex" id="05">
+                <span>m/s</span>
+            </div>
             <figure class="marcador" id="rs05">
                 <img src="imagens/close.svg" alt="">
             </figure>
@@ -50,9 +65,9 @@
         <input class="apagarBtn" type="button" id="refazer" value="Refazer">
         <input class="apagarBtn" type="button" id="tente-novamente" value="Tente novamente">
         <input class="confirmarBtn" type="button" id="confirmar" value="Confirmar">
-        <p class="mensagem" id="m01"><span>Digite todas as respotas!</span></p>
-        <p class="mensagem" id="m02"><span style="color: rgb(40, 138, 16);">Parabéns</span></p>
-        <p class="mensagem" id="m03"><span>Tem algo errado...</span></p>
+        <p class="mensagem vermelho" id="m01">Digite todas as respotas</p>
+        <p class="mensagem verde" id="m02">Parabéns</p>
+        <p class="mensagem vermelho" id="m03">Tem algo errado...</p>
     </div>
 </body>
 <script src="js/verificarRespostas.js"></script>
