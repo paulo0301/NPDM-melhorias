@@ -3,7 +3,9 @@
 body{
     background-color: #EFF1F6;
 }
-
+header{
+    position: relative;
+}
 main{
     width: 720px;
     min-height: 20em;
@@ -27,6 +29,7 @@ main{
     color: #2c3e50;
     font-weight: 700;
     font-size: 1.1em;
+    margin: 0 0 .4em;
 }
 .subtitulo-aula{
     text-transform: uppercase;
@@ -101,4 +104,10 @@ hr{
     .container-exercicios ol{
         margin-left: 0.5rem;
     }
+}
+
+/*XXXXXXXXXXXXXXXXX IFRAME XXXXXXXXXXXXXXXX*/
+
+iframe{
+    max-width: 100%;
 }
