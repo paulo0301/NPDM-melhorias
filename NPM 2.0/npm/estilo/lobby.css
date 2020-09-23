@@ -1,18 +1,26 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap');
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Rubik', sans-serif;}
 main h1{
     background-color: #50828d;
     color: #fefefe;
-    padding: 0.4em;
+    padding: 0.5em 0.1em 0.5em 0.6em;
+    width: 50%;
+    min-width: max-content;
     margin: 1em 0 0 -0.5em;
-    display: inline-block;
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 2.1em;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
 }
-
+main h1 img{
+    margin-right: 10px;
+}
 main{
     background-color: #e5e5e5;
     margin: 1em;
     height: 95%;
 }
-
 section{
     width: 100%;
     height: 80%;
@@ -20,36 +28,43 @@ section{
     display: flex;
     justify-content: center;
 }
-
 section .card{
-    border-radius: 1.5em 2em 0 0;
-    margin: 1em;
-    background-color: #72bfb5;
+    width: 18em;
     color: #ffffff;
-    height: 10em;
-    width: 15em;
+    margin: 1em 3em;
+    z-index: 100;
+}
+section .card .titulo-e-logo{
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    background-color: #72bfb5;
+    height: 20em;
+    width: 100%;
+    z-index: 1;
+    padding: 0.2em 0;
     text-align: center;
 }
-section .card:hover {
-    background-color: #4aa296;
-    height: 20em;
-    transition: all 1s;
+section .card:hover .descricao{
+    transform: translateY(-1.8em);
 }
- 
-section .card p{
-    visibility: hidden;
+section .card .titulo-e-logo h2{
+    font-weight: 100;
+    margin: 0.3em;
+}
+section .card .descricao{
+    background-color: #32968b;
+    text-align: center;
+    border-radius: 0 0 1.5em 1.5em;
+    padding: 2em 0.3em 0.5em;
+    z-index: -2;
+    position: relative;
+    transform: translateY(-100%);
+    transition: 1.2s ease-in-out;
+    display: inline-block;
 }
 
-section .card:hover p{
-    visibility: visible;
-    transition: all 5s;
-}
-
-section .card h2{
-  margin: 0.3em;
-}
 
 section .card img{
     display: block;
-    margin: 1em auto 4em;
+    width: 150px;
+    margin: 3.5em auto 0;
 }
