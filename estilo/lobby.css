@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap');
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Rubik', sans-serif;}
+a{text-decoration: none;}
+
 main h1{
     background-color: #50828d;
     color: #fefefe;
-    padding: 0.5em 0.1em 0.5em 0.6em;
-    width: 50%;
+    padding: 0.2em 0.1em 0.2em 0.6em;
+    width: 45%;
     min-width: max-content;
-    margin: 1em 0 0 -0.5em;
+    margin: 0.7em 0 0 -0.5em;
     display: inline-flex;
     font-weight: 500;
     font-size: 2.1em;
@@ -15,6 +17,7 @@ main h1{
 }
 main h1 img{
     margin-right: 10px;
+    width: 75px;
 }
 main{
     background-color: #e5e5e5;
@@ -29,42 +32,73 @@ section{
     justify-content: center;
 }
 section .card{
-    width: 18em;
+    display: block;
+    min-width: 15em;
+    width: 15em;
+    height: 19em;
     color: #ffffff;
     margin: 1em 3em;
-    z-index: 100;
-}
-section .card .titulo-e-logo{
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
     background-color: #72bfb5;
-    height: 20em;
-    width: 100%;
-    z-index: 1;
-    padding: 0.2em 0;
+    border-radius: 1em;
     text-align: center;
-}
-section .card:hover .descricao{
-    transform: translateY(-1.8em);
-}
-section .card .titulo-e-logo h2{
-    font-weight: 100;
-    margin: 0.3em;
-}
-section .card .descricao{
-    background-color: #32968b;
-    text-align: center;
-    border-radius: 0 0 1.5em 1.5em;
-    padding: 2em 0.3em 0.5em;
-    z-index: -2;
-    position: relative;
-    transform: translateY(-100%);
-    transition: 1.2s ease-in-out;
-    display: inline-block;
+    transition: all 0.7s;
 }
 
+section .card:hover{
+    background-color: #4aa196;
+    transition: all 0.4s;
+    height: 28em;
+}
+
+section .card h2{
+    margin: 0.7em;
+    height: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: all 0.7s;
+}
+
+section .card:hover h2{
+    margin-top: 1em;
+    transition: all 0.7s;
+}
 
 section .card img{
     display: block;
-    width: 150px;
-    margin: 3.5em auto 0;
+    width: 10em;
+    margin: 2em auto 0;
+    transition: all 0.7s;
 }
+
+section .card:hover img{
+    transition: all 0.7s;
+    width: 11em;
+}
+
+.card .descricao{
+    opacity: 0; 
+    width: 100%;
+    margin: 1.2em 0 0 0;
+    height: 1em;
+}
+.card .descricao p{
+    opacity: 0;
+}
+
+section .card:hover .descricao p{
+    opacity: 1;
+    max-height: 100%;
+    transition: all 0.7s linear 0.2s;
+}
+
+section .card:hover .descricao{
+    opacity: 1;
+    background-color: #32968b;
+    height: 10em;
+    margin: 1.2em 0 0 0;
+    padding: 1em;
+    border-radius: 0 0 1em 1em ;
+    transition: all 0.5s;
+}
+
+
