@@ -22,7 +22,7 @@ main h1 img{
 main{
     background-color: #e5e5e5;
     margin: 1em;
-    height: 95%;
+    height: 95vh;
 }
 section{
     width: 100%;
@@ -76,7 +76,7 @@ section .card:hover img{
 }
 
 .card .descricao{
-    opacity: 0; 
+    opacity: 0;
     width: 100%;
     margin: 1.2em 0 0 0;
     height: 1em;
@@ -100,5 +100,95 @@ section .card:hover .descricao{
     border-radius: 0 0 1em 1em ;
     transition: all 0.5s;
 }
+/* xxxxxxxxxx FOOTER  XXXXXXXXXXXXXXXXXXXXXX */
+footer{
+    background-color: #4f828c;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 1em;
+    color: #fff;
+}
+footer address, footer div#sobre-projeto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer h3{
+    margin-bottom: 0.5em;
+}
+footer li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+footer li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0.2em 0;
+}
+footer img{
+    width: 24px;
+    margin-right: 4px;
+}
+footer div#sobre-projeto{
+    width: 100%;
+    max-width: 25em;
+    text-align: justify;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 20em;
+}
+footer input, textarea{
+    display: inline-block;
+    padding: 1em 0.5em;
+    margin: 0.5em 0;
+    resize: none;
+    width: 100%;
+    outline-color: #4f828c;
+}
+input[type='submit']{
+    background-color: #1c4f58;
+    border: none;
+    color: white;
+    font-size: 1em;
+    float: right;
+    width: 40%;
+}
+footer div#creditos{
+    display: block;
+    width: 100%;
+    padding: 1em 3px;
+    background-color: #6298a2;
+    margin-top: 0.3em;
+    font-size: 1em;
+}
+div#creditos h3{
+    font-weight: 400;
+    margin-bottom: 0.3em;
+}
 
-
+@media (max-width: 1000px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0em 0;
+    }
+    footer address, footer div#sobre-projeto{
+        align-items: center;
+        margin-bottom: 2em;
+        padding: 0 1em;
+    }
+    footer form{
+        padding: 0 1em;
+        max-width: 25em;
+    }
+}

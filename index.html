@@ -1,35 +1,59 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo-npm.svg">
     <link rel="stylesheet" href="estilo/colors.css">
     <link rel="stylesheet" href="estilo/lobby.css">
     <title>Na Palma Da Mão</title>
 </head>
 <body>
     <main>
-        <h1><img src="imagens/logo-npm.png" alt="logotipo"/> Educação na Palma da Mão</h1>
+        <h1><img src="imagens/logo-npm.svg" alt="logotipo"/> Educação na Palma da Mão</h1>
         <section>
-            <a href="#" class="card">
+            <a href="index-matematica.html" class="card">
                 <h2>Matematica básica</h2>
                 <img src="imagens/logo-matematica.svg">
                 <div class="descricao">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo saepe totam, odio vel mollitia quam sapiente fugiat ipsum, consequatur optio officia fuga eius placeat? Consequatur cum atque voluptate maxime ducimus.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo saepe totam, odio vel mollitia quam sapiente fugiat ipsum, consequatur optio </p>
                 </div>
             </a>
             <a href="#" class="card">
-                <h2>Física Invertida    </h2>
+                <h2>Física Invertida</h2>
                 <img src="imagens/logo-fisica.svg">
                 <div class="descricao">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo saepe totam, odio vel mollitia quam sapiente fugiat ipsum, consequatur optio officia fuga eius placeat? Consequatur cum atque voluptate maxime ducimus.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo saepe totam, odio vel mollitia quam sapiente fugiat ipsum, consequatur optio of</p>
                 </div>
             </a>
-            
         </div>
     </section>
 </main>
 <footer>
+    <address>
+        <h3>Informações para contato</h3>
+        <ul>
+            <li><a href="https://goo.gl/maps/JxR5XJWitknyGFD3A" target="_blank"><img src="imagens/placeholder.svg" alt="localização">IFRN | Natal - Central</a></li>
+            <li><img src="imagens/mail.svg" alt="arroba">geraldo.felipe@ifrn.edu.br</li>
+        </ul>
+    </address>
     
+    <div id="sobre-projeto">
+        <h3>SOBRE OS PROJETOS</h3>
+        <p>Somos uma equipe de professores, servidores e alunos do IFRN, trabalhando na produção de material didático digital, em uma perspectiva inclusiva, versando sobre matemática básica e ciências, com ênfase no letramento científico e tecnológico para todas as idades, principalmente para nossos alunos jovens...</p>
+    </div>
+    
+    <form action="enviar">
+        <input type="text" name="nome" id="nome" placeholder="Nome" required/>
+        <input type="email" name="email" id="email" placeholder="E-mail" required/>
+        <textarea placeholder="Mensagem" name="mensagem" id="mensagem" rows="10"></textarea>
+        <input type="submit" id="enviar" value="Enviar">
+    </form>
+    
+    <div id="creditos">
+        <h3>Desenvolvido por:</h3>
+        <p>Paulo Daniel (IFRN/CNAT), Pedro Paulo (IFRN/CNAT), Denner Augusto (IFRN/CNAT) e Joel Victor (IFRN/CNAT)</p>
+    </div>
 </footer>
 
 </body>
