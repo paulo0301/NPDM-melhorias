@@ -167,7 +167,7 @@ input[type='submit']{
     float: right;
     width: 40%;
 }
-@media (min-width: 1000px){
+@media (max-width: 1000px){
     footer{
         flex-direction: column;
         align-items: center;

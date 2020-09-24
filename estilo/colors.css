@@ -8,4 +8,27 @@
     color: #D9BC6B;
 }
 
+.roxo, .roxo li:hover{
+    background-color: #7F6CA9;
+    color: #7F6CA9;
+}
 
+.azul02, .azul02 li:hover{
+    background-color: #6783E8;
+    color: #6783E8;
+}
+
+.amarelo, .amarelo li:hover{
+    background-color: #FFDA58;
+    color: #FFDA58;
+}
+
+.cinza, .cinza li:hover{
+    background: #858585;
+    color: #858585;
+}
+
+.verde, .verde li:hover{
+    background-color: #5FB1A7;
+    color: #5FB1A7;
+}

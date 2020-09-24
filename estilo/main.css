@@ -220,6 +220,7 @@ header ol.open li{
     width: 100%;
     margin-top: 6.4em;
     font-size: 1rem;
+    margin-bottom: -4px;
 }
 @media screen and (max-width: 513px){
     .imgInclusao img{
