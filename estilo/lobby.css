@@ -2,27 +2,31 @@
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Rubik', sans-serif;}
 a{text-decoration: none;}
 
-main h1{
+main{
+    background-color: #e5e5e5;
+    margin: 1em;
+    height: 95%;
+}
+
+main .logotipo{
     background-color: #50828d;
     color: #fefefe;
     padding: 0.2em 0.1em 0.2em 0.6em;
     width: 45%;
     min-width: max-content;
-    margin: 0.7em 0 0 -0.5em;
+    margin: 0.7em 0 0 -1em;
     display: inline-flex;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+}
+main .logotipo h1{
     font-weight: 500;
     font-size: 2.1em;
-    align-items: center;
-    border-radius: 0 25px 25px 0;
+    margin-right: 0.5em;
 }
-main h1 img{
-    margin-right: 10px;
+main .logotipo img{
+    margin: 5px 10px 5px 0;
     width: 75px;
-}
-main{
-    background-color: #e5e5e5;
-    margin: 1em;
-    height: 95%;
 }
 section{
     width: 100%;
@@ -163,11 +167,12 @@ input[type='submit']{
     float: right;
     width: 40%;
 }
-@media (max-width: 1000px){
+@media (min-width: 1000px){
     footer{
         flex-direction: column;
         align-items: center;
         padding: 1.5em 1em;
+        
     }
     footer address, footer div#sobre-projeto{
         align-items: center;
@@ -175,5 +180,67 @@ input[type='submit']{
     }
     footer form{
         max-width: 25em;
+    }
+}
+
+@media screen and (max-width:1024px){
+    section{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    section .card{
+        height: 26em;
+        background-color: #4aa196;
+    }
+    
+    .card .descricao{
+        opacity: 1;
+        background-color: #32968b;
+        height: 10em;
+        margin: 1.2em 0 0 0;
+        padding: 1em;
+        border-radius: 0 0 1em 1em ;
+    }
+    
+    .card .descricao p{
+        opacity: 1;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width:425px){
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    main .logotipo{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    main .logotipo h1{
+        font-size: 1.5em;
+    }
+    main .logotipo img{
+        width: 70px;
+    }
+    
+    section .card{
+        width: 20em;
+    }
+}
+
+@media screen and (max-width:375px){
+    main .logotipo h1{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:320px){
+    main .logotipo h1{
+        font-size: 1em;
     }
 }
