@@ -22,7 +22,7 @@ main h1 img{
 main{
     background-color: #e5e5e5;
     margin: 1em;
-    height: 95vh;
+    height: 95%;
 }
 section{
     width: 100%;
@@ -163,32 +163,17 @@ input[type='submit']{
     float: right;
     width: 40%;
 }
-footer div#creditos{
-    display: block;
-    width: 100%;
-    padding: 1em 3px;
-    background-color: #6298a2;
-    margin-top: 0.3em;
-    font-size: 1em;
-}
-div#creditos h3{
-    font-weight: 400;
-    margin-bottom: 0.3em;
-}
-
 @media (max-width: 1000px){
     footer{
         flex-direction: column;
         align-items: center;
-        padding: 1em 0em 0;
+        padding: 1.5em 1em;
     }
     footer address, footer div#sobre-projeto{
         align-items: center;
         margin-bottom: 2em;
-        padding: 0 1em;
     }
     footer form{
-        padding: 0 1em;
         max-width: 25em;
     }
 }
