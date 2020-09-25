@@ -53,8 +53,8 @@
     </address>
     
     <div id="sobre-projeto">
-        <h3>SOBRE OS PROJETOS</h3>
-        <p>Somos uma equipe de professores, servidores e alunos do IFRN, trabalhando na produção de material didático digital, em uma perspectiva inclusiva, versando sobre matemática básica e ciências, com ênfase no letramento científico e tecnológico para todas as idades, principalmente para nossos alunos jovens...</p>
+        <h3>Sobre os projetos</h3>
+        <p>Somos uma equipe de professores, servidores e alunos do IFRN, trabalhando na produção de material didático digital, em uma perspectiva inclusiva, versando sobre matemática básica e ciências, com ênfase no letramento científico e tecnológico para todas as idades.</p>
     </div>
     
     <form action="enviar">
@@ -67,8 +67,11 @@
 
 </body>
 <script>
-    $(window).load(function() {
-        $("body").removeClass("preload");
+    // $(window).load(function() {
+    //     $("body").removeClass("preload");
+    // });
+    window.addEventListener("load", () => {
+        document.querySelector("body").classList.remove("preload");
     });
 </script>
 </html>
