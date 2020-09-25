@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo/lobby.css">
     <title>Na Palma Da Mão</title>
 </head>
-<body>
+<body class="preload">
     <main>
         <a class="logotipo" href="#"><img src="imagens/logo-npm.svg" alt="logotipo"/><h1>Educação na Palma da Mão</h1></a>
         <section>
@@ -66,5 +66,9 @@
 </footer>
 
 </body>
+<script>
+    $(window).load(function() {
+        $("body").removeClass("preload");
+    });
 </script>
 </html>

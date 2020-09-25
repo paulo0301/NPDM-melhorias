@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap');
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Rubik', sans-serif;}
 a{text-decoration: none;}
+.preload *{  transition: none !important;}
 
+/*///////////// MAIN /////////////*/
 main{
     background-color: #e5e5e5;
     margin: 1em;
@@ -105,6 +107,77 @@ section .card:hover .descricao{
     border-radius: 0 0 1em 1em ;
     transition: all 0.5s;
 }
+@media screen and (max-width:1350px){
+    section{
+        flex-wrap: wrap;
+    }
+    
+    section .card{
+        width: 40%;
+    }
+    
+    .card .descricao p{
+        font-size: 1.1em;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    section .card{
+        width: 25em;
+        height: 26em;
+        background-color: #4aa196;
+    }
+    
+    .card .descricao{
+        opacity: 1;
+        background-color: #32968b;
+        height: 10em;
+        margin: 1.2em 0 0 0;
+        padding: 1em;
+        border-radius: 0 0 1em 1em ;
+    }
+    
+    .card .descricao p{
+        opacity: 1;
+        max-height: 100%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:600px){
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    main .logotipo{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    main .logotipo h1{
+        font-size: 1.5em;
+    }
+    main .logotipo img{
+        width: 70px;
+    }
+    
+    section .card{
+        width: 25em;
+    }
+}
+
+@media screen and (max-width:375px){
+    main .logotipo h1{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:320px){
+    main .logotipo h1{
+        font-size: 1em;
+    }
+}
 /* xxxxxxxxxx FOOTER  XXXXXXXXXXXXXXXXXXXXXX */
 footer{
     background-color: #4f828c;
@@ -181,77 +254,5 @@ input[type='submit']{
     }
     footer form{
         max-width: 25em;
-    }
-}
-
-@media screen and (max-width:1350px){
-    section{
-        flex-wrap: wrap;
-    }
-
-    section .card{
-        width: 40%;
-    }
-
-    .card .descricao p{
-        font-size: 1.1em;
-    }
-    
-}
-
-@media screen and (max-width:768px){
-    section .card{
-        width: 25em;
-        height: 26em;
-        background-color: #4aa196;
-    }
-    
-    .card .descricao{
-        opacity: 1;
-        background-color: #32968b;
-        height: 10em;
-        margin: 1.2em 0 0 0;
-        padding: 1em;
-        border-radius: 0 0 1em 1em ;
-    }
-    
-    .card .descricao p{
-        opacity: 1;
-        max-height: 100%;
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width:600px){
-    main{
-        width: 100%;
-        margin: 0;
-    }
-    main .logotipo{
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
-    }
-    main .logotipo h1{
-        font-size: 1.5em;
-    }
-    main .logotipo img{
-        width: 70px;
-    }
-    
-    section .card{
-        width: 25em;
-    }
-}
-
-@media screen and (max-width:375px){
-    main .logotipo h1{
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width:320px){
-    main .logotipo h1{
-        font-size: 1em;
     }
 }
