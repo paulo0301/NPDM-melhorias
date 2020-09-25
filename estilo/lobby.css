@@ -192,6 +192,7 @@ input[type='submit']{
 
 @media screen and (max-width:768px){
     section .card{
+        width: 25em;
         height: 26em;
         background-color: #4aa196;
     }
@@ -211,7 +212,7 @@ input[type='submit']{
     }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:600px){
     main{
         width: 100%;
         margin: 0;
@@ -229,13 +230,13 @@ input[type='submit']{
     }
     
     section .card{
-        width: 20em;
+        width: 25em;
     }
 }
 
 @media screen and (max-width:375px){
     main .logotipo h1{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
