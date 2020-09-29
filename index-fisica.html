@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo/colors.css">
     <title>Física Invertida</title>
 </head>
-<body>
+<body id="fisica">
     <header>
         <div class="alterarFonte">
             <ol>
@@ -107,7 +107,7 @@
         changeFont.classList.toggle("alterarFonte02", window.scrollY > 0);
         nav.classList.toggle("nav02", window.scrollY > 0);
     })
-    
+    console.log(document.querySelector("body#fisica header"));
     //Alterar tamanho da fonte
     window.onload = function() {
         var elementBody = document.querySelector('body');

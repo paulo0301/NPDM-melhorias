@@ -19,7 +19,6 @@ a{text-decoration: none;}
 header{
     width: 100%;
     padding: 0 0 0.5em 0;
-    background-color: #086D99;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -30,7 +29,13 @@ header{
     transition: 0.5s;
 }
 .header02{
-    background-color: rgba(69, 69, 69, 0.6);
+    background-color: rgba(69, 69, 69, 0.6) !important;
+}
+body#matematica header{
+    background-color: #086D99;
+}
+body#fisica header{
+    background-color: #37abd0;
 }
 header input{
     background-color: transparent;
