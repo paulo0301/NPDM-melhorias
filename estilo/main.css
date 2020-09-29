@@ -78,7 +78,9 @@ header li{
 header li a, footer li a{
     color: #ffffff;
 }
-
+header li a.active{
+    border-bottom: 2px solid #FACA22;
+}
 header li a:hover{
     border-bottom: 2px solid #FACA22;
 }
@@ -96,6 +98,9 @@ header li a:hover{
     }
     header li a:hover{
         border-bottom: none;
+    }
+    header li a.active{
+        border: none;
     }
     header nav{
         width: 100%;
