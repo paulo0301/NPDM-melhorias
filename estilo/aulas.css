@@ -81,10 +81,12 @@ hr{
     display: flex;
     align-items: end;
     justify-content: center;
+    font-size: 1rem;
 }
 .container-exercicios ol{
     list-style: none;
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin: 0 0 0 1rem;
 }
@@ -116,6 +118,9 @@ hr{
     height: 0;
     padding-bottom: 56.25%;
     position: relative;
+    -webkit-box-shadow: 1px 1px 4px -1px rgba(125,112,125,1);
+    -moz-box-shadow: 1px 1px 4px -1px rgba(125,112,125,1);
+    box-shadow: 1px 1px 4px -1px rgba(125,112,125,1);
 }
 iframe{
     position: absolute;
