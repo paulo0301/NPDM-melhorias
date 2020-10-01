@@ -11,6 +11,12 @@
 .fisicaFont{
     background-color: #2d7992
 }
+.quimica{
+    background-color: #862ad5;
+}
+.quimicaFont{
+    background-color: #691eaf;
+}
 
 /*XXXXXXXXXXX SECTIONS COLORS XXXXXXXXXXXXX*/
 .azul, .azul li:hover{
@@ -46,4 +52,14 @@
 .verde, .verde li:hover{
     background-color: #5FB1A7;
     color: #5FB1A7;
+}
+
+.verde-claro, .verde-claro li:hover{
+    background-color: #24b962;
+    color:#24b962;
+}
+
+.rosa, .rosa li:hover{
+    background-color: #c762b1;
+    color:#c762b1;
 }

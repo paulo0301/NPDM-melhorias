@@ -60,6 +60,7 @@ header h1 a{
 header h1 a img{
     float: left;
     width: 60px;
+    height: 60px;
     margin: 0 8px;
 }
 
@@ -253,6 +254,7 @@ main{
 main .aulas{
     text-align: center;
     padding: 2em 0 8em;
+    height: 100vh;
 }
 main .linkAulas{
     width: 100%;
