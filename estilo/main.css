@@ -103,6 +103,18 @@ header li a:hover{
     header.matematica nav{
         background-color: #086D99;
     }
+    header.quimica nav{
+        background-color:  #862ad5;
+    }
+    header.fisica nav ol li a:hover{
+        background-color: #2d7992;
+    }
+    header.matematica nav ol li a:hover{
+        background-color: #1b4f65;
+    }
+    header.quimica nav ol li a:hover{
+        background-color: #691eaf;
+    }
     header nav{
         width: 100%;
         position: absolute;
@@ -114,7 +126,7 @@ header li a:hover{
         background-color:  rgba(69, 69, 69, 0.6) !important;
     }
     .nav02 a:hover{
-        background-color: rgba(88, 88, 88, 0.6);
+        background-color: rgba(88, 88, 88, 0.6) !important;
     }
     header nav ol{
         display: block;
@@ -133,9 +145,6 @@ header li a:hover{
         height: 100%;
         width: 100%;
         border-top: 1px solid #fff;
-    }
-    header nav ol li a:hover{
-        background-color: #184355;
     }
     .open{
         left: 0;
