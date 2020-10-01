@@ -1,3 +1,18 @@
+/*XXXXXXXXXXXX HEADER COLORS XXXXXXXXXXXXXX*/
+.matematica{
+    background-color: #086D99;
+}
+.matematicaFont{
+    background-color: #1b4f65;
+}
+.fisica{
+    background-color: #37abd0;
+}
+.fisicaFont{
+    background-color: #2d7992
+}
+
+/*XXXXXXXXXXX SECTIONS COLORS XXXXXXXXXXXXX*/
 .azul, .azul li:hover{
     background-color: #738ADC;
     color: #738ADC;

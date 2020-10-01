@@ -6,6 +6,30 @@ body{
 header{
     position: relative;
 }
+
+.aulas{
+    text-align: center;
+    margin: 1em auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aulas a{
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #34495e;
+}
+
+.aulaAtual{
+    font-weight: 500;
+}
+
+.aulas a:hover{
+    border-bottom: 1px solid #34495e;
+}
 main{
     width: 720px;
     min-height: 20em;

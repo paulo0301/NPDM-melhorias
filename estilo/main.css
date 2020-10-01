@@ -6,7 +6,6 @@ a{text-decoration: none;}
 .alterarFonte{
     display: block;
     width: 100%;
-    background-color: #184355;
     color: #ffffff;
     margin-bottom: 0.5em;
     padding: 0.3em 0;
@@ -14,7 +13,7 @@ a{text-decoration: none;}
     font-size: 1rem;
 }
 .alterarFonte02{
-    background-color: rgba(88, 88, 88, 0.6);
+    background-color:rgba(69, 69, 69, 0.6) !important;
 }
 header{
     width: 100%;
@@ -80,10 +79,10 @@ header li a, footer li a{
     color: #ffffff;
 }
 header li a.active{
-    border-bottom: 2px solid #FACA22;
+    border-bottom: 2px solid #FFFFFF;
 }
 header li a:hover{
-    border-bottom: 2px solid #FACA22;
+    border-bottom: 2px solid #FFFFFF;
 }
 .sandwich{
     display: none;
