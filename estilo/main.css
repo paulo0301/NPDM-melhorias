@@ -100,18 +100,23 @@ header li a:hover{
         border-bottom: none;
     }
     header li a.active{
-        border: none;
+        border-bottom: none;
+    }
+    header.fisica nav{
+        background-color: #37abd0;
+    }
+    header.matematica nav{
+        background-color: #086D99;
     }
     header nav{
         width: 100%;
         position: absolute;
         top: 100%;
-        background-color: #086D99;
         left: -100%;
         transition: 0.5s ease-in-out;
     }
     .nav02{
-        background-color:  rgba(69, 69, 69, 0.6);
+        background-color:  rgba(69, 69, 69, 0.6) !important;
     }
     .nav02 a:hover{
         background-color: rgba(88, 88, 88, 0.6);
