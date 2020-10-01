@@ -31,12 +31,6 @@ header{
 .header02{
     background-color: rgba(69, 69, 69, 0.6) !important;
 }
-body#matematica header{
-    background-color: #086D99;
-}
-body#fisica header{
-    background-color: #37abd0;
-}
 header input{
     background-color: transparent;
     border: none;
