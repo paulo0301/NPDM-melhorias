@@ -54,7 +54,7 @@ header h1 a{
 header h1 a img{
     float: left;
     width: 60px;
-    height: 60px;
+    /* height: 60px; */
     margin: 0 8px;
 }
 
@@ -299,6 +299,9 @@ main h2{
 }
 
 @media screen and (max-width: 785px){
+    main .aulas{
+        height: max-content;
+    }
     main .linkAulas{
         width: 80%;
         flex-direction: column;
@@ -355,12 +358,7 @@ footer ul.outros-projetos img{
     display: inline-block;
     height: 67px;
 }
-@media screen and (max-width:540px){
-    footer ul{
-        text-align: end;
-    }
-}
-@media screen and (max-width: 470px){
+@media screen and (max-width: 600px){
     footer{
         flex-direction: column;
         padding: 2em 1em;
