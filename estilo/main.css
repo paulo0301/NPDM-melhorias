@@ -233,7 +233,7 @@ header ol.open li{
 }
 /*XXXXXXXXXX FIM CABEÇALHO XXXXXXXXXXX*/
 
-/*XXXXXXXXXX IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
+/*XXXXXXXXXX IMAGEM SIMBOLO INCLUSÃO XXXXXXXXXX*/
 .imgInclusao img{
     width: 100%;
     margin-top: 6.4em;
@@ -250,7 +250,7 @@ header ol.open li{
         margin-top: 5em;
     }
 }
-/*XXXXXXXXXX FIM IMAGEM SIMBOLA INCLUSÃO XXXXXXXXXX*/
+/*XXXXXXXXXX FIM IMAGEM SIMBOLO INCLUSÃO XXXXXXXXXX*/
 
 /*XXXXXXXXXXXXX MAIN XXXXXXXXXXXXXX*/
 
@@ -309,6 +309,17 @@ main h2{
         width: 100%;
         margin-left: 2em;
         margin-right: 0;
+    }
+}
+/*APLICAR CLASSE class="rotacionarTela" NO ELEMENTO QUE DESEJA SUBSTITUIR*/
+@media screen and (orientation: landscape){
+    .rotacionarTela{
+        display: block;
+    }
+}
+@media screen and (orientation: portrait){
+    .rotacionarTela{
+        display: none;
     }
 }
 /*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
