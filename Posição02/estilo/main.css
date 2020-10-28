@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+/*XXXXXXXXXX CABEÇALHO XXXXXXXXXXX*/
+.alterarFonte{
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    padding: 0.3em 0;
+    text-align: right;
+    font-size: 1rem;
+}
+.alterarFonte02{
+    background-color:rgba(69, 69, 69, 0.6) !important;
+}
+header{
+    width: 100%;
+    padding: 0 0 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-size: 1rem;
+    left: 0;
+    transition: 0.5s;
+}
+.header02{
+    background-color: rgba(69, 69, 69, 0.6) !important;
+}
+header input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+}
+header h1{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+header h1 a{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+header h1 a img{
+    float: left;
+    width: 60px;
+    margin: 0 8px;
+}
+
+header nav ol{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+header li{
+    display: inline;
+    margin: 1em;
+}
+
+header li a, footer li a{
+    color: #ffffff;
+}
+header li a.active{
+    border-bottom: 2px solid #FFFFFF;
+}
+header li a:hover{
+    border-bottom: 2px solid #FFFFFF;
+}
+.sandwich{
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 920px){
+    header{
+        padding-bottom: 0em;
+        z-index: 1;
+    }
+    header h1{
+        margin-bottom: 0.5rem;
+    }
+    header li a:hover{
+        border-bottom: none;
+    }
+    header li a.active{
+        border-bottom: none;
+    }
+    header.fisica nav{
+        background-color: #37abd0;
+    }
+    header.matematica nav{
+        background-color: #086D99;
+    }
+    header.quimica nav{
+        background-color:  #862ad5;
+    }
+    header.fisica nav ol li a:hover{
+        background-color: #2d7992;
+    }
+    header.matematica nav ol li a:hover{
+        background-color: #1b4f65;
+    }
+    header.quimica nav ol li a:hover{
+        background-color: #691eaf;
+    }
+    header nav{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+    }
+    .nav02{
+        background-color:  rgba(69, 69, 69, 0.6) !important;
+    }
+    .nav02 a:hover{
+        background-color: rgba(88, 88, 88, 0.6) !important;
+    }
+    header nav ol{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    header nav ol li{
+        display: block;
+        margin: 0;
+        height: 3rem;
+    }
+    header nav ol li a{
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border-top: 1px solid #fff;
+    }
+    .open{
+        left: 0;
+    }
+    .sandwich{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2em;
+        margin-bottom: 0.5em;
+    }
+    .line{
+        height: 4px;
+        width: 30px;
+        border-radius: 5px;
+        margin: 0.1em;
+        background-color: #fff;
+        transition: 0.4s;
+    }
+}
+@media screen and (max-width: 512px){
+    .alterarFonte{
+        padding: 0 0 2px 0;
+    }
+    .alterarFonte ol{
+        margin: 0;
+        text-align: right;
+        margin-right: 5px;
+    }
+    .alterarFonte ol li{
+        margin: 0 2px;
+    }
+    .alterarFonte input{
+        font-size: 0.8rem;
+    }
+    header h1{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 420px){
+    .alterarFonte ol{
+        text-align: center;
+    }
+    header h1 a img{
+        width: 45px;
+        margin: 0 4px;
+    }
+    .sandwich{
+        margin-right: 0.3rem;
+    }
+}
+@media screen and (max-width: 390px){
+    .alterarFonte ol{
+        text-align: right;
+    }
+    .alterarFonte input{
+        font-size: 0.72rem;
+    }
+    .sandwich{
+        margin-right: 0.5em;
+    }
+    header h1{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 350px){
+    .alterarFonte input{
+        font-size: 0.64rem;
+    }
+}
+.change .line1{
+    -webkit-transform: rotate(-45deg) translate(-10px, 0px);
+    transform: rotate(45deg) translate(-11px, px);
+}
+.change .line2{
+    opacity: 0;
+}
+.change .line3{
+    -webkit-transform: rotate(45deg) translate(-10px, 0px);
+    transform: rotate(45deg) translate(-10px, 0px);
+}
+header ol.open li{
+    border-top: 1px solid #fff;
+    margin: 0;
+    height: 3.2em;
+    display: flex;
+}
+/*XXXXXXXXXX FIM CABEÇALHO XXXXXXXXXXX*/
+
+/*XXXXXXXXXX IMAGEM SIMBOLO INCLUSÃO XXXXXXXXXX*/
+.imgInclusao img{
+    width: 100%;
+    margin-top: 6.4em;
+    font-size: 1rem;
+    margin-bottom: -4px;
+}
+@media screen and (max-width: 513px){
+    .imgInclusao img{
+        margin-top: 5.8em;
+    }
+}
+@media screen and (max-width: 420px){
+    .imgInclusao img{
+        margin-top: 5em;
+    }
+}
+/*XXXXXXXXXX FIM IMAGEM SIMBOLO INCLUSÃO XXXXXXXXXX*/
+
+/*XXXXXXXXXXXXX MAIN XXXXXXXXXXXXXX*/
+
+main{
+    width: 100%;
+}
+
+main .aulas{
+    text-align: center;
+    padding: 2em 0 8em;
+    height: 100vh;
+}
+main .linkAulas{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+main .linkAulas ol{
+    margin: 0 3em;
+    width: 25%;
+}
+
+main .linkAulas li{
+    padding: 1em;
+    border-left: 2px solid #ffffff;
+    color: white;
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    font-weight: 500;
+}
+main .linkAulas li:hover{
+    background-color:#ffffff;
+}
+main h2{
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 1em 0 3em;
+}
+
+@media screen and (max-width: 785px){
+    main .aulas{
+        height: max-content;
+    }
+    main .linkAulas{
+        width: 80%;
+        flex-direction: column;
+    }
+    main .linkAulas ol{
+        width: 100%;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+}
+/*APLICAR CLASSE class="rotacionarTela" NO ELEMENTO QUE DESEJA SUBSTITUIR*/
+@media screen and (orientation: landscape){
+    .rotacionarTela{
+        display: block;
+    }
+}
+@media screen and (orientation: portrait){
+    .rotacionarTela{
+        display: none;
+    }
+}
+/*XXXXXXXXXXXXX FIM MAIN XXXXXXXXXXXXXX*/
+
+/*XXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXX*/
+
+footer{
+    background-color: #313334;
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+    color: #ffffff;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+footer ul{
+    list-style: none;
+}
+footer h3{
+    font-weight: 500;
+}
+address ul li, address ul li a{
+    display: flex;
+    align-items: center;
+}
+
+address ul li{
+    margin: 0.5em 0;
+    font-weight: 300;
+}
+address ul li img{
+    margin-right: 0.3em;
+    width: 24px;
+}
+footer ul.outros-projetos li{
+    display: inline;
+    margin: 0 0.5em;
+    border-radius: 50%;
+}
+
+footer ul.outros-projetos img{
+    border-radius: 50%;
+    display: inline-block;
+    height: 67px;
+}
+@media screen and (max-width: 600px){
+    footer{
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+    footer ul.outros-projetos{
+        margin: 3em 0 0 0;
+    }
+}
+@media screen and (max-width: 380px){
+    footer ul.outros-projetos img{
+        height: 50px;
+    }
+}
+/*XXXXXXXXXXXXX FIM FOOTER XXXXXXXXXXXXXX*/

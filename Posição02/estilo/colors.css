@@ -1,0 +1,64 @@
+/*XXXXXXXXXXXX HEADER COLORS XXXXXXXXXXXXXX*/
+.matematica{
+    background-color: #086D99;
+}
+.matematicaFont{
+    background-color: #1b4f65;
+}
+.fisica{
+    background-color: #37abd0;
+}
+.fisicaFont{
+    background-color: #2d7992;
+}
+.quimica{
+    background-color: #862ad5;
+}
+.quimicaFont{
+    background-color: #691eaf;
+}
+/*XXXXXXXXXXX SECTIONS COLORS XXXXXXXXXXXXX*/
+.azul, .azul li:hover{
+    background-color: #738ADC;
+    color: #738ADC;
+}
+
+.amarelo, .amarelo li:hover{
+    background-color: #D9BC6B;
+    color: #D9BC6B;
+}
+
+.roxo, .roxo li:hover{
+    background-color: #7F6CA9;
+    color: #7F6CA9;
+}
+
+.azul02, .azul02 li:hover{
+    background-color: #6783E8;
+    color: #6783E8;
+}
+
+.amarelo, .amarelo li:hover{
+    background-color: #FFDA58;
+    color: #FFDA58;
+}
+
+.cinza, .cinza li:hover{
+    background: #858585;
+    color: #858585;
+}
+
+.verde, .verde li:hover{
+    background-color: #5FB1A7;
+    color: #5FB1A7;
+}
+
+.verde-claro, .verde-claro li:hover{
+    background-color: #24b962;
+    color:#24b962;
+}
+
+.rosa, .rosa li:hover{
+    background-color: #c762b1;
+    color:#c762b1;
+}
