@@ -87,6 +87,11 @@ p{
         text-align: left;
     }
 }
+@media (max-device-width: 480px){
+    p{
+        text-align: left;
+    }
+}
 b{
     color: #2c3e50;
 }
