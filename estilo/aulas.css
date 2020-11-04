@@ -162,7 +162,7 @@ hr{
     -moz-box-shadow: 1px 1px 4px -1px rgba(125,112,125,1);
     box-shadow: 1px 1px 4px -1px rgba(125,112,125,1);
 }
-.container-iframe iframe{
+.container-iframe iframe, .container-iframe video{
     position: absolute;
     top: 0;
     left: 0;
@@ -172,4 +172,8 @@ hr{
 
 iframe{
     border: none;
+}
+
+video{
+    outline: none;
 }
