@@ -182,3 +182,35 @@ iframe{
 video{
     outline: none;
 }
+
+/*XXXXXXXXXXXXX FIM IFRAME XXXXXXXXXXXXXXXXXXX*/
+
+/*XXXXXXXXXXXXXX AUXILIARES XXXXXXXXXXXXXXXXX*/
+.btn {
+    -webkit-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+    display: inline-block;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    margin:10px 0;	 
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}
+.btn:hover {
+    background: #dfe6e9;
+}
+.btn:active {
+    background: #ebebeb;
+    outline: none;
+}
+
+.btn-padrao:hover {
+    border: 1px solid gray;
+}
+
+.imgButton{
+    vertical-align: middle;
+    margin: 0 5px;
+}

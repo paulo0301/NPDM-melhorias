@@ -1,6 +1,7 @@
 // Barra de rolagem fixa
 addEventListener("scroll", function(){
     var header = document.querySelector("header");
+    if(header.classList[1] == 'aulaHeader') return;
     var changeFont = document.querySelector(".alterarFonte");
     var nav = document.querySelector("nav");
     header.classList.toggle("header02", window.scrollY > 0);
