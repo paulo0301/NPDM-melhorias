@@ -195,6 +195,10 @@ footer address, footer div#sobre-projeto{
     justify-content: center;
     flex-direction: column;
 }
+footer a{
+    color: white;
+    text-decoration: underline;
+}
 footer h3{
     margin-bottom: 0.5em;
 }
