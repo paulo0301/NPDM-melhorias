@@ -214,3 +214,32 @@ video{
     vertical-align: middle;
     margin: 0 5px;
 }
+
+.btnSeta{
+    background-color: #086d99;
+    padding: 8px 5px 5px 5px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 4px solid #053b52;
+    border-left: 4px solid #074661;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline:none;
+}
+.btnSeta:hover{
+    background-color: #0b7aaa;
+    border-bottom: 4px solid #084f6d;
+    border-left: 4px solid   #0a6085;
+    cursor: pointer;
+}
+.btnSeta:active{
+    border-bottom: 2px solid #084f6d;
+    border-left: 2px solid   #0a6085;
+}
+.btnSeta img{
+    width: 25px;
+}
