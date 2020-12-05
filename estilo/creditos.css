@@ -57,6 +57,7 @@ div.integrante{
 }
 div.integrante h3{
     font-weight: 400;
+    margin-bottom: 5px;
 }
 div.integrante p.descricao{
     font-weight: 100;
